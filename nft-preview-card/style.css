@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background: #0d192c;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 19.5rem;
+  padding: 2em 1em;
+  background: #15263f;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+}
+
+.equilibrium-logo {
+  position: relative;
+  align-self: center;
+  width: 302px;
+  height: 302px;
+}
+
+.equilibrium-logo:hover .equilibrium-logo-overlay {
+  opacity: 0.5;
+}
+
+.equilibrium-logo:hover .equilibrium-logo-overlay img {
+  opacity: 1;
+}
+
+.equilibrium-logo-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.equilibrium-logo-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #00fff8;
+  mix-blend-mode: normal;
+  cursor: pointer;
+}
+
+.card-container > a {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.card-container > a:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
+.card-container > p {
+  margin-top: 1rem;
+  font-weight: 300;
+  color: #8bacd9;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #2e405a;
+}
+
+.card-meta-ammount img {
+  position: relative;
+  top: 2px;
+  margin-right: 0.2rem;
+}
+
+.card-meta-ammount span {
+  color: #00fff8;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.card-meta-time span {
+  color: #8bacd9;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.card-meta-time img {
+  position: relative;
+  margin-right: 0.2rem;
+  top: 4px;
+}
+
+.card-user {
+  display: flex;
+  margin-top: 1rem;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 1.8rem; */
+}
+
+.card-user img {
+  height: 33px;
+  width: auto;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.card-user p {
+  color: #8bacd9;
+}
+
+.card-user a {
+  color: white;
+}
+
+.card-user a:hover {
+  color: #00fff8;
+  cursor: pointer;
+}

@@ -1,0 +1,293 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  font: inherit;
+}
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-primary: 12 94% 65%;
+  --clr-secondary: 33 100% 70%;
+  --clr-accent: 177 68% 64%;
+  --clr-light: 20 33% 98%;
+  --clr-dark: 244 23% 12%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  min-height: 100vh;
+  background: url("./assets/bg-main-desktop.png");
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.opaque {
+  opacity: 0.5;
+}
+
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+
+.bg-light {
+  background-color: hsl(var(--clr-light));
+}
+
+.bg-primary {
+  background-color: hsl(var(--clr-primary));
+}
+
+.bg-secondary {
+  background-color: hsl(var(--clr-secondary));
+}
+
+.bg-accent {
+  background-color: hsl(var(--clr-accent));
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.text-light {
+  color: hsl(var(--clr-light));
+}
+
+.container {
+  padding-inline: 4em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  font-weight: 700;
+}
+
+#colors {
+  margin-top: 4rem;
+}
+
+.colors-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 1.5rem;
+  margin-block: 3rem;
+}
+
+.colors-container span {
+  margin-right: 5rem;
+}
+
+.accent-color {
+  min-height: 100px;
+  border-radius: 12px;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  background-color: hsl(var(--clr-accent));
+}
+
+.primary-color {
+  min-height: 100px;
+  border-radius: 12px;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  background-color: hsl(var(--clr-primary));
+}
+
+.secondary-color {
+  min-height: 100px;
+  border-radius: 12px;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  background-color: hsl(var(--clr-secondary));
+}
+
+.light-color {
+  min-height: 100px;
+  border-radius: 12px;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  background-color: hsl(var(--clr-light));
+  border: 1px solid hsl(var(--clr-dark));
+}
+
+.dark-color {
+  min-height: 100px;
+  border-radius: 12px;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  color: hsl(var(--clr-light));
+  background-color: hsl(var(--clr-dark));
+}
+
+#typography {
+  margin-top: 4rem;
+}
+
+.typography-container {
+  display: grid;
+  margin-block: 2rem;
+  gap: 1rem;
+  grid-template-rows: repeat(2, minmax(0, 17rem));
+  grid-template-columns: repeat(2, minmax(0, 39rem));
+  grid-template-areas:
+    "heading1 body1"
+    "heading2 body2";
+}
+
+.typography-container ul {
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+  list-style: none;
+}
+
+.typography-heading1 {
+  grid-area: heading1;
+}
+
+.typography-heading1 h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -1px;
+}
+
+.typography-heading2 {
+  grid-area: heading2;
+}
+
+.typography-heading2 h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.typography-body1 {
+  grid-area: body1;
+}
+
+.typography-body1 > p {
+  font-size: 1.25rem;
+  line-height: 34px;
+}
+
+.typography-body2 {
+  grid-area: body2;
+}
+
+.typography-body2 > p {
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+#buttons {
+  margin-block: 4rem;
+}
+
+.buttons-container {
+  display: grid;
+  text-align: center;
+  margin-block: 2rem;
+  padding-block: 3rem;
+  font-size: 2rem;
+  gap: 3rem;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: hsl(var(--clr-primary));
+}
+
+.buttons-container p {
+  font-size: 1rem;
+  color: hsl(var(--clr-light));
+}
+
+.apple-icon {
+  padding-left: 1em;
+  background: url("./assets/icon-apple.svg") no-repeat left;
+}
+
+.android-icon {
+  padding-left: 1em;
+  background: url("./assets//icon-android.svg") no-repeat left;
+}
+
+.buttons-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.buttons-container button {
+  min-height: 3.8rem;
+  border-radius: 12px;
+}
