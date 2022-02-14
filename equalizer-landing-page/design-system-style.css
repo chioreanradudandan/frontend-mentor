@@ -136,9 +136,12 @@ header p {
 .colors-container {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   gap: 1.5rem;
   margin-block: 3rem;
+}
+
+.colors-container > * {
+  flex: 0 1 20rem;
 }
 
 .colors-container span {
