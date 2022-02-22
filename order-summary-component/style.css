@@ -1,0 +1,149 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+button {
+  font: inherit;
+  border: none;
+  background-color: inherit;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.card-container {
+  width: 327px;
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-img {
+  max-width: 100%;
+  background: url("./images/illustration-hero.svg");
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 24px;
+}
+
+.card-info h1 {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.card-info p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #717fa6;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 17px 16px;
+  background-color: #f7f9ff;
+  border-radius: 11px;
+}
+
+.pricing span {
+  font-weight: 900;
+  color: #1f2e55;
+}
+
+.pricing button {
+  font-weight: 700;
+  color: #382ae1;
+  border-bottom: 2px solid #382ae1;
+}
+
+.pricing button:hover {
+  color: #766cf1;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.checkout-btn {
+  color: white;
+  padding-block: 15px;
+  background-color: #382ae1;
+  border-radius: 11px;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.checkout-btn:hover {
+  background-color: #766cf1;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  font-weight: 900;
+  line-height: 20px;
+  color: #717fa6;
+}
+
+.cancel-btn:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+
+  .card-container {
+    width: 450px;
+  }
+
+  .card-info {
+    gap: 32px;
+    margin: 45px 48px;
+  }
+
+  .card-info h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .card-info p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
