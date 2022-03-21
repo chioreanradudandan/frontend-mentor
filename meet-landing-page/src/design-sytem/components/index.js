@@ -1,1 +1,1 @@
-export { default as Circle } from './circle'
+export { default as ColorSection } from './colors-section'

@@ -18,12 +18,18 @@ const theme = {
 
   fontWeights: {
     normal: 400,
-    semiBold: 700,
-    bold: 900,
+    semiBold: 500,
+    bold: 700,
+    extraBold: 900,
   },
 
   fontSizes: {
-    s: '16px',
+    xs: '16px',
+    s: '18px',
+    m: '26px',
+    l: '32px',
+    xl: 'px',
+    xxl: '64px',
   },
 }
 
