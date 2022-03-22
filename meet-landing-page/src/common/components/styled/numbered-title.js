@@ -4,7 +4,7 @@ import { rem } from 'polished'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  margin: ${rem(64)} 0;
+  margin-bottom: ${rem(64)};
 `
 
 export const Title = styled.div`

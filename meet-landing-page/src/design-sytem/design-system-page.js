@@ -1,13 +1,11 @@
 import React from 'react'
-import { Page, NumberedTitle } from '../common/components'
-import { ColorSection } from './components'
+import { Page } from '../common/components'
+import { ColorSection, TypographySection } from './components'
 
 const DesignSystemPage = () => (
   <Page>
-    <NumberedTitle number="01" title="colors" />
     <ColorSection />
-
-    <NumberedTitle number="02" title="typography" />
+    <TypographySection />
   </Page>
 )
 

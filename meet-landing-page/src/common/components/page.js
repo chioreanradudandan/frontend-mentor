@@ -10,7 +10,6 @@ const Page = ({ children }) => (
       Design system
     </Styled.Header>
     <Styled.Main>{children}</Styled.Main>
-    <Styled.Footer>Footer</Styled.Footer>
   </Styled.Page>
 )
 
