@@ -29,17 +29,32 @@ export const Background = styled.div`
     opacity: 0.9;
     z-index: -1;
   }
+
+  @media only screen and (min-width: 830px) {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 5em;
+    align-items: center;
+  }
 `
 
 export const Heading = styled.h1`
   margin-top: ${em(32)};
-
   font-size: ${({ theme }) => theme.fontSizes.l};
   font-weight: ${({ theme }) => theme.fontWeights.extraBold};
+
+  @media only screen and (min-width: 830px) {
+    margin-top: 0;
+  }
 `
 
 export const Text = styled.p`
+  margin: 2em auto;
   font-size: ${({ theme }) => theme.fontSizes.s};
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   line-height: 26px;
+
+  @media only screen and (min-width: 830px) {
+    max-width: 350px;
+  }
 `

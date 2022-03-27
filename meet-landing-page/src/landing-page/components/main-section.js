@@ -24,13 +24,15 @@ const MainSection = () => (
       </Styled.CardImage>
     </Styled.CardsContainer>
 
-    <Styled.SubHeading>Built for modern use</Styled.SubHeading>
-    <Styled.Heading>Smarter meetings, all in one place</Styled.Heading>
-    <Styled.Text>
-      Send messages, share files, show your screen, and record your meetings —
-      all in one workspace. Control who can join with invite-only team access,
-      data encryption, and data export.
-    </Styled.Text>
+    <Styled.Content>
+      <Styled.SubHeading>Built for modern use</Styled.SubHeading>
+      <Styled.Heading>Smarter meetings, all in one place</Styled.Heading>
+      <Styled.Text>
+        Send messages, share files, show your screen, and record your meetings —
+        all in one workspace. Control who can join with invite-only team access,
+        data encryption, and data export.
+      </Styled.Text>
+    </Styled.Content>
   </Styled.Container>
 )
 

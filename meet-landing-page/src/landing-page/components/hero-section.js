@@ -5,6 +5,7 @@ import * as Styled from './styled/hero-section'
 const HeroSection = () => (
   <Styled.Container>
     <Styled.HeroImage />
+    <Styled.HeroImgLeft />
     <Styled.HeroContent>
       <Styled.Title>Group Chat for Everyone</Styled.Title>
       <Styled.Description>
@@ -19,6 +20,7 @@ const HeroSection = () => (
         <Button>What is it?</Button>
       </Styled.ButtonsContainer>
     </Styled.HeroContent>
+    <Styled.HeroImgRight />
   </Styled.Container>
 )
 
