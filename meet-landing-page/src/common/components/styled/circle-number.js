@@ -8,6 +8,7 @@ export const Container = styled.div`
   height: ${({ theme }) => rem(56, theme.fonts.baseSize)};
   border-radius: 50%;
   color: ${({ theme }) => theme.colors.grey};
+  background-color: white;
   border: 0.5px solid ${({ theme }) => theme.colors.grey};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.s};

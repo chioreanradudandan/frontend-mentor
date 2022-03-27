@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { rem } from 'polished'
+import { rem, em } from 'polished'
 
 export const Container = styled.div`
-  margin-block: ${rem(100)};
+  margin-block: ${em(100)};
 `
 
 export const CardsContainer = styled.div`

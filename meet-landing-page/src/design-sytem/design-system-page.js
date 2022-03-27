@@ -1,12 +1,18 @@
 import React from 'react'
-import { Page } from '../common/components'
+import { ReactComponent as Logo } from '../common/assets/logo.svg'
+import * as Layout from './components/styled/layout'
 import { ColorSection, TypographySection } from './components'
 
 const DesignSystemPage = () => (
-  <Page>
-    <ColorSection />
-    <TypographySection />
-  </Page>
+  <Layout.Page>
+    <Layout.Header>
+      <Logo />
+    </Layout.Header>
+    <Layout.Main>
+      <ColorSection />
+      <TypographySection />
+    </Layout.Main>
+  </Layout.Page>
 )
 
 export default DesignSystemPage

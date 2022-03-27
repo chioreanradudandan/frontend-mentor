@@ -8,7 +8,7 @@ const theme = {
     secondaryAccent: hsl(268, 1, 0.86),
     dark: hsl(240, 0.21, 0.2),
     grey: hsl(240, 0.1, 0.57),
-    light: hsl(0, 0, 98),
+    light: hsl(0, 0, 0.98),
   },
 
   fonts: {
@@ -28,7 +28,7 @@ const theme = {
     s: '18px',
     m: '26px',
     l: '32px',
-    xl: 'px',
+    xl: '40px',
     xxl: '64px',
   },
 }

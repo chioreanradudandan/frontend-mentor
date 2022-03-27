@@ -3,21 +3,22 @@ import styled from 'styled-components'
 export const Page = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
-  padding: 0 10%;
+  grid-template-columns: 5% 1fr 5%;
   height: 100vh;
 `
 
 export const Header = styled.header`
   display: flex;
-  padding: 2rem;
-  justify-content: space-between;
-  /* background: lightpink; */
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+  grid-column: 1 / 4;
 `
 
 export const Main = styled.main`
-  /* background: coral; */
+  grid-column: 2 / 3;
 `
 
 export const Footer = styled.footer`
-  background: wheat;
+  grid-column: 1 / 4;
 `

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { rem } from 'polished'
+import { em } from 'polished'
 import backgroundImage from '../../../common/assets/desktop/image-footer.jpg'
 
 export const Container = styled.div`
-  margin-block: ${rem(100)};
+  margin-block: ${em(100)};
 `
 
 export const Image = styled.div`
@@ -11,7 +11,7 @@ export const Image = styled.div`
   background-size: cover;
   min-height: 308px;
   position: relative;
-  padding: ${rem(95)};
+  padding: ${em(95)};
   z-index: 1;
 
   ::before {

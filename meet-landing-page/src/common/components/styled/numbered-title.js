@@ -1,14 +1,14 @@
 import styled from 'styled-components'
-import { rem } from 'polished'
+import { em } from 'polished'
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: ${rem(64)};
+  margin-bottom: ${em(64)};
 `
 
 export const Title = styled.div`
-  margin-left: ${rem(31.5)};
+  margin-left: ${em(31.5)};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.l};
   text-transform: capitalize;
