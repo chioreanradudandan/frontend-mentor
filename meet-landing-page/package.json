@@ -1,7 +1,7 @@
 {
   "name": "weakid-tech",
   "version": "0.1.0",
-  "homepage": "https://chioreanradudandan.github.io/frontend-mentor/meet-landing-page",
+  "homepage": "https://chioreanradudandan.github.io/frontend-mentor/meet-landing-page/build",
   "private": true,
   "dependencies": {
     "polished": "^4.1.4",
