@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+:root {
+  /* colors */
+  --clr-orange: 31, 77%, 52%;
+  --clr-cyan: 184, 100%, 22%;
+  --clr-dark-cyan: 179, 100%, 13%;
+  --clr-light: 0, 0%, 100%, 0.75;
+  --clr-grey: 0, 0%, 95%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  min-height: 100vh;
+  background: #333;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
+}
+
+button {
+  font: inherit;
+  border: none;
+  color: hsl(var(--clr-grey));
+  background-color: hsl(var(--clr-grey));
+  padding: 1rem 2.1rem;
+  margin: 1px;
+  border-radius: 25px;
+  border: 1px solid hsla(var(--clr-light));
+}
+
+.card-container button:hover {
+  cursor: pointer;
+  color: hsla(var(--clr-light));
+  background-color: inherit;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 3.2rem;
+  align-items: flex-start;
+  color: hsla(var(--clr-light));
+  border-radius: 8px;
+}
+
+.card-container h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+
+  color: hsl(var(--clr-grey));
+}
+
+.sedans {
+  background-color: hsl(var(--clr-orange));
+}
+
+.sedans button {
+  color: hsl(var(--clr-orange));
+}
+
+.suvs {
+  background-color: hsl(var(--clr-cyan));
+}
+
+.suvs button {
+  color: hsl(var(--clr-cyan));
+}
+
+.luxury {
+  background-color: hsl(var(--clr-dark-cyan));
+}
+
+.luxury button {
+  color: hsl(var(--clr-dark-cyan));
+}
+
+@media (min-width: 920px) {
+  button {
+    margin-top: 5.5rem;
+  }
+}
