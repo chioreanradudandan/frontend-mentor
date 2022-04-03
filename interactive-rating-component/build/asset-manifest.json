@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/frontend-mentor/interactive-rating-component/build/static/js/main.901bd3ce.js",
+    "static/media/illustration-thank-you.svg": "/frontend-mentor/interactive-rating-component/build/static/media/illustration-thank-you.d74a66b551b99ae110b5362ed63106bf.svg",
+    "index.html": "/frontend-mentor/interactive-rating-component/build/index.html",
+    "static/media/icon-star.svg": "/frontend-mentor/interactive-rating-component/build/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
+    "main.901bd3ce.js.map": "/frontend-mentor/interactive-rating-component/build/static/js/main.901bd3ce.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.901bd3ce.js"
+  ]
+}
