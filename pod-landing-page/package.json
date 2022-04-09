@@ -1,7 +1,7 @@
 {
   "name": "weakid-tech",
   "version": "0.1.0",
-  "homepage": "https://chioreanradudandan.github.io/frontend-mentor/interactive-rating-component/build",
+  "homepage": "https://chioreanradudandan.github.io/frontend-mentor/pod-landing-page/build",
   "private": true,
   "dependencies": {
     "polished": "^4.1.4",
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build -e interactive-rating-component",
+    "deploy": "gh-pages -b master -d build -e meet-landing-page",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
